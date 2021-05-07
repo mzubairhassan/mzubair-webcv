@@ -1,0 +1,56 @@
+.right_sidebar_container {
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  height: 94vh;
+}
+.menu_icon {
+  background-color: #242430;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.menu_icon_nav {
+  justify-content: flex-start;
+}
+.menu_icon_return {
+  justify-content: center;
+}
+.menu_icon button {
+  background: none;
+  border: 0;
+  color: var(--text-color-secondary);
+  outline: none;
+}
+.home_text span {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+.navbar {
+  background-color: #20202a;
+  padding: 20px 10px;
+  color: var(--text-color-secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.right_navlist_container {
+}
+.navbar_closed {
+  align-items: flex-start;
+}
+.right_navlist_container_ul {
+  list-style: none;
+  padding: 0;
+}
+.right_navlist_container_ul li {
+  padding: 5px 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+.right_sidebar_footer {
+}

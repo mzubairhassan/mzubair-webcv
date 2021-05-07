@@ -1,0 +1,211 @@
+.site_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.background_overlay {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+
+  display: grid;
+  grid-template-rows: 320px 1fr;
+}
+.background_image_overlay {
+  opacity: 0.6;
+  background: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgb(20, 20, 28)
+    ),
+    url("../../../public/content_header-back.jpg");
+  background-size: cover;
+  opacity: 0.1;
+  background-position: center;
+}
+.background_dark_overlay {
+  background: linear-gradient(rgb(18, 18, 24, 0.3), rgb(20, 20, 28));
+}
+.content_container {
+  width: inherit;
+  height: inherit;
+  padding: 0px 25px;
+  padding-top: 60px;
+  position: inherit;
+  height: 94vh;
+  overflow-y: scroll;
+}
+.content_container::-webkit-scrollbar {
+  display: none;
+}
+.content_header {
+  height: 330px;
+  width: inherit;
+  background: url(../../../public/content_header-back.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.top_bar {
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  height: 30px;
+  background-color: rgba(24, 24, 32, 0.88);
+  top: -30px;
+  box-shadow: rgb(12 12 16 / 20%) 0px 3px 8px 0px;
+}
+
+.content_header_gradient {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(
+    141deg,
+    rgba(36, 36, 46, 0.9) 15%,
+    rgb(55 55 67 / 70%) 50%,
+    rgba(36, 39, 41, 0.7) 100%
+  );
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+  row-gap: 1.5rem;
+  padding: 40px 60px;
+  color: white;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+}
+.header_content h1 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 42px;
+}
+.type_writer_code,
+.type_writer_string span {
+  font-family: "Courier Prime";
+}
+.color_span_code {
+  color: var(--primary-color);
+  margin: 0px 10px 0px 0px;
+}
+.type_writer {
+  padding-left: 10px;
+}
+
+.type_writer_string {
+  display: flex;
+  align-items: flex-end;
+}
+
+.explore_link {
+  height: 40px;
+  background-color: var(--primary-color);
+  width: 150px;
+  text-align: center;
+  padding-top: 12px;
+  display: block;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  color: black;
+  text-transform: uppercase;
+  transition: transform 0.6s ease-in-out;
+}
+
+.explore_link:hover {
+  transform: translateY(-4px);
+}
+
+.experience_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.experience_list_column {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  align-items: center;
+}
+.experience_list_column_numbers {
+  color: var(--primary-color);
+  font-size: 23px;
+  font-weight: 600;
+}
+.experience_list_column_text {
+  font-size: 12px;
+  color: var(--text-color-secondary);
+}
+
+.my_services_section {
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+.my_services_heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+.my_services_row_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.box_container {
+  padding: 0px 34px;
+  max-width: 310px;
+  height: 210px;
+  background-color: #2b2b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.my_service_box_label h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.my_service_box_text {
+  font-size: 12px;
+  color: var(--text-color-secondary);
+}
+.my_service_box_action {
+  color: var(--primary-color);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 1s ease-in-out;
+}
+.my_service_box_action_arrow {
+  transition: transform 350ms ease-in-out;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.my_service_box_action:hover > .my_service_box_action_arrow {
+  transform: translateX(5px);
+}
+
+.footer_container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c38;
+  margin-top: 50px;
+  font-size: 12px;
+  color: var(--text-color-secondary);
+  padding: 0 35px;
+}
+.footer_inspiration {
+  color: var(--text-color);
+  text-transform: uppercase;
+}

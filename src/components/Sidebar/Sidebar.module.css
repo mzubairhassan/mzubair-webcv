@@ -1,0 +1,176 @@
+.side_bar {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 30% 63% 7%;
+  background-color: #24242f;
+}
+.scrollable_container {
+  max-height: 56vh;
+  min-height: fit-content;
+  overflow-y: scroll;
+}
+
+.scrollable_container::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.side_bar_header {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  border-radius: 50%;
+}
+
+.header_person_name {
+  margin: 15px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.header_person_desc {
+  font-size: 12px;
+  color: var(--text-color-secondary);
+}
+
+/* sidebar content css */
+.side_bar_content {
+  padding: 10px 20px;
+  background-color: #20202a;
+}
+.div_divider {
+  margin: 0;
+  background-color: #646466;
+  height: 1px;
+}
+
+.header_content_address_info {
+  padding: 15px 0px;
+}
+
+.header_address_info_row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+  height: 20px;
+}
+.header_address_info_row label {
+  font-size: 12px;
+  color: var(--text-color);
+}
+.header_address_info_row p {
+  font-size: 12px;
+  color: var(--text-color-secondary);
+}
+.header_language_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0px;
+}
+.svgs {
+  display: block;
+  width: 100%;
+}
+.svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.svg div {
+  height: 50px;
+  width: 50px;
+}
+.svg label {
+  font-size: 12px;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.sidebar_skill_section {
+  padding: 20px 0px;
+}
+.skill_row {
+  margin: 10px;
+}
+.skill_text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.skill_text label:first-child {
+  color: var(--text-color);
+}
+.skill_text label:last-child {
+  color: var(--text-color-secondary);
+}
+
+.progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  position: relative;
+  top: -10px;
+}
+.progress::-webkit-progress-bar {
+  background-color: #191923;
+}
+.progress::-webkit-progress-value {
+  background-color: var(--primary-color);
+}
+
+.sidebar_technologies_section {
+  padding: 20px 0px;
+}
+.technology {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+  font-size: 12px;
+}
+.technology label {
+  color: var(--text-color-secondary);
+}
+.check_icon {
+  color: var(--primary-color);
+  height: 12px !important;
+}
+.download_cv {
+  padding: 10px 0px;
+}
+.download_cv a {
+  font-size: 12px;
+  color: var(--text-color-secondary);
+  font-weight: bold;
+}
+.download_cv svg {
+  height: 12px !important;
+}
+
+/* sidebar footer css */
+
+.side_bar_footer {
+  padding: 12px 20px;
+}
+
+.social_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social_icon {
+  color: var(--text-color-secondary);
+  height: 15px !important;
+}
